@@ -47,7 +47,7 @@ $("#btnLogin").click(function(){
   }).done(function(data){
       console.log('Login realizado com sucesso...');
       if(data==1)
-      $(location).attr('href','/projeto/index.php');
+      $(location).attr('href','/projeto/index.html');
       else{
         alert('login ou senha invalidos....');
       }   
