@@ -1,0 +1,63 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+ .containerPrincipal{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   height: 100vh;
+   width: 100vw;
+   background: #ffffff;
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+main{
+    background: #fff;
+    border-radius: 32px;
+    padding: 32px;
+    width: 25%;
+}
+
+main > div {
+    padding: 8px;
+}
+
+
+main > div label {
+    padding: 4px 0px;
+    font-weight: bold;
+}
+
+main .boxButton {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  color: #041832;
+}
+
+main h1 {
+    text-align: center;
+    color: #041832;
+}
+
+main .boxButton2 {
+    width: 100%;
+    display: flex;
+    color: #041832;  
+ }
+ @media (max-width: 800px) {
+    main {
+        width: 80%;
+    }
+}
+@media (max-width: 280px) {
+    main {
+        width: 80%;
+        padding: 12px;
+    }
+}

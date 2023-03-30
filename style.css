@@ -1,0 +1,73 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+ .containerPrincipal{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   height: 100vh;
+   width: 100vw;
+   background: #ffffff;
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; 
+   
+}
+
+form{
+    background: #fff;
+    border-radius: 32px;
+    padding: 32px;
+    width: 30%;
+}
+
+form > div {
+    padding: 8px;
+}
+
+
+form > div label {
+    padding: 4px 0px;
+    font-weight: bold;
+}
+
+#labelNome{
+ padding: 8px;
+}
+#labelUsuario{
+    padding: 8px;
+}
+#labelSenha{
+    padding: 8px;
+}
+#labelEmail{
+    padding: 8px;
+}
+
+
+form .boxButton {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+form h1 {
+    text-align: center;
+     color: #041832;  
+    
+}
+
+@media (max-width: 800px) {
+    form {
+        width: 75%;       
+    }
+}
+@media (max-width: 280px) {
+    form {
+        width: 80%;
+        padding: 8px;
+    }
+}
