@@ -22,7 +22,7 @@
     }).done(function(data){
         if(data==1){
           alert('cadastro de cargas realizado com sucesso....');
-          $(location).attr('href','/projeto/index.html');
+          $(location).attr('href','/projeto/telainicial.php');
         }else{
           alert('error....');
         }

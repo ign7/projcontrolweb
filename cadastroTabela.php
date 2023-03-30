@@ -15,7 +15,7 @@
     <nav class="menu">
         <ul>
             <li>
-                <a href="/projeto/index.html">Inicio</a>
+                <a href="/projeto/telainicial.php">Inicio</a>
             </li>
             <li>
                 <a href="contatos">Contatos</a>
@@ -27,7 +27,7 @@
     </nav>
 </div>
     <aside class="autentificacao">
-        <a href="/projeto/login.php">login</a>
+        <a href="/projeto/index.html">login</a>
         <a href="#registrar" class="botaodestaque">registrar</a>
     </aside>
 </header>

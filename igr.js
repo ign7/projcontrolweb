@@ -22,7 +22,7 @@
     $('#usuario').val('');
     $('#senha').val(' ');
     $('#email').val(' ');
-     $(location).attr('href','/projeto/login.php');
+     $(location).attr('href','/projeto/index.html');
   }).fail(function(result){
     console.log('falha ao AJAX');
   });
@@ -47,7 +47,7 @@ $("#btnLogin").click(function(){
   }).done(function(data){
       console.log('Login realizado com sucesso...');
       if(data==1)
-      $(location).attr('href','/projeto/index.html');
+      $(location).attr('href','/projeto/telainicial.php');
       else{
         alert('login ou senha invalidos....');
       }   
@@ -57,9 +57,9 @@ $("#btnLogin").click(function(){
 });
 
 
-function novoUsuario(){
+/* function novoUsuario(){
   window.location.href = "/projeto/cadastro.php"
-} 
+}  */
 
 
 
