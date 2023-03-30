@@ -45,5 +45,5 @@ $(function(){
    
 
   function atualizar(){
-  window.location.href="/projeto/atualizar.php"
+  window.location.href="/projeto/atualizar.html"
   }
