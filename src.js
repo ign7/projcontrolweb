@@ -1,7 +1,7 @@
 
 $(function(){
     $.ajax({
-        url:'http://localhost/projeto/InserirTabela.php',
+        url:'./InserirTabela.php',
         method:'GET',
         dataType:'json'
        }).done(function(msg){  
@@ -40,10 +40,10 @@ $(function(){
 
 
   function novoCadastro(){
-    window.location.href="/projeto/cadastroTabela.php"
+    window.location.href="./cadastroTabela.php"
   }
    
 
   function atualizar(){
-  window.location.href="/projeto/atualizar.html"
+  window.location.href="./atualizar.html"
   }

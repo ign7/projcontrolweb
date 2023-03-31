@@ -17,14 +17,14 @@
    if(nomeCarga && valorCarga && dataCarga && obsCarga){
 
     $.ajax({
-      url:'http://localhost/projeto/DadosTabela.php',
+      url:'./DadosTabela.php',
       method:'POST',
       data:{carga:nomeCarga,valor:valorCarga,data:dataCarga,obs:obsCarga},
       dataType:'json'
     }).done(function(data){
         if(data==1){
           alert('cadastro de cargas realizado com sucesso....');
-          $(location).attr('href','/projeto/telainicial.php');
+          $(location).attr('href','./telainicial.php');
         }else{
           alert('error....');
         }

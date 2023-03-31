@@ -9,7 +9,7 @@
   if(user && name && pass && Email){  
 
     $.ajax({
-      url:'http://localhost/projeto/inserirCadastro.php',
+      url:'./inserirCadastro.php',
       method:'POST',
       data:{usuario:user,
             nome:name,
@@ -40,7 +40,7 @@ $("#btnLogin").click(function(){
 
  if(usuarioLogin!='' || senhaLogin!=null){
   $.ajax({
-    url:'http://localhost/projeto/inserirLogin.php',
+    url:'./inserirLogin.php',
     method:'POST',
     data:{user:usuarioLogin,senha:senhaLogin},
     dataType:'json'
