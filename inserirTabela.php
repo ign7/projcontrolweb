@@ -1,8 +1,9 @@
 
 <?php 
+header('Access-Control-Allow-Origin: *'); 
 include("conexao.php");
 header('Content-Type: application/json');
-header('Access-Control-Allow-Origin: *'); 
+
 
        
          $sql=$con->prepare("SELECT * FROM cadastrocarga");
