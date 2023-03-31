@@ -40,7 +40,7 @@ $("#btnLogin").click(function(){
 
  if(usuarioLogin!='' || senhaLogin!=null){
   $.ajax({
-    url:'http://localhost/projeto/inserirLogin.php',
+    url:'./inserirLogin.php',
     method:'POST',
     data:{user:usuarioLogin,senha:senhaLogin},
     dataType:'json'
@@ -49,7 +49,7 @@ $("#btnLogin").click(function(){
       if(data==1){
         alert('Login realizado com sucesso...');
         $('#labeluser').html('@'+usuarioLogin);
-        $(location).attr('href','/projeto/telainicial.php');
+        $(location).attr('href','./telainicial.php');
       }
      
       else{
