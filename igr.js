@@ -47,6 +47,7 @@ $("#btnLogin").click(function(){
   }).done(function(data){
       console.log('Login realizado com sucesso...');
       if(data==1){
+        alert('Login realizado com sucesso...');
         $('#labeluser').html('@'+usuarioLogin);
         $(location).attr('href','/projeto/telainicial.php');
       }
