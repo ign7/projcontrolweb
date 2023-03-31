@@ -59,8 +59,7 @@
         </div>
     </main>
     <script src="jquery-3.6.4.min.js"></script>
-  <script src="src.js"></script>
   <script src="igr.js"></script>
-  
+  <script src="src.js"></script>  
 </body>
 </html>
