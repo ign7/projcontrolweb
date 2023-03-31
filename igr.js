@@ -32,6 +32,9 @@
 
 });    
 
+function time(){
+  $(location).attr('href','./telainicial.php');
+}
 
 $("#btnLogin").click(function(){
 
@@ -48,7 +51,7 @@ $("#btnLogin").click(function(){
       console.log('Login realizado com sucesso...');
       if(data==1){
         alert('Login realizado com sucesso...');
-        $(location).attr('href','./telainicial.php');
+        setTimeout(time,2000); 
       }
      
       else{
