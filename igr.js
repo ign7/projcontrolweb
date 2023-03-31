@@ -9,7 +9,7 @@
   if(user && name && pass && Email){  
 
     $.ajax({
-      url:'./inserirCadastro.php',
+      url:'http://localhost/projeto/inserirCadastro.php',
       method:'POST',
       data:{usuario:user,
             nome:name,
