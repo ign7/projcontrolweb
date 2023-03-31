@@ -46,8 +46,11 @@ $("#btnLogin").click(function(){
     dataType:'json'
   }).done(function(data){
       console.log('Login realizado com sucesso...');
-      if(data==1)
-      $(location).attr('href','/projeto/telainicial.php');
+      if(data==1){
+        $('#labeluser').html('@'+usuarioLogin);
+        $(location).attr('href','/projeto/telainicial.php');
+      }
+     
       else{
         alert('login ou senha invalidos....');
       }   

@@ -10,6 +10,8 @@
     let valorCarga=$('#valor').val();
     let dataCarga=$('#dia').val();
    let obsCarga=$('#obs').val();
+
+   let usuario=$('#usario').val();
    
    
    if(nomeCarga && valorCarga && dataCarga && obsCarga){

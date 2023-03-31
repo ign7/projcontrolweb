@@ -2,7 +2,9 @@
 <?php 
 include("conexao.php");
 header('Content-Type: application/json');
+header('Access-Control-Allow-Origin: *'); 
 
+       
          $sql=$con->prepare("SELECT * FROM cadastrocarga");
          $sql->execute();
          
@@ -10,8 +12,6 @@ header('Content-Type: application/json');
             echo json_encode($sql->fetchAll(PDO::FETCH_ASSOC));
          }else
          echo " Fail ....";
-   
-
 
 ?>
 

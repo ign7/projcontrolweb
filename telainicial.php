@@ -28,7 +28,7 @@
     </div>
         <aside class="autentificacao">
             <a href="/projeto/index.html">login</a>
-            <a href="#registrar" class="botaodestaque">registrar</a>
+            <a id="labeluser"></a>
         </aside>
     </header>
     <main class="corpo">

@@ -46,7 +46,8 @@ body{
 }
 
 .autentificacao{
-    padding-top: 12px;      
+    padding-top: 12px;   
+    padding-right: 20px;   
 }
 .titulo  h1{
     display: flex;
@@ -102,6 +103,15 @@ td{
     font-size: 18px;
    
 }
+
+
+#labeluser{
+    color:rgb(92, 92, 233); 
+    border: 2px solid #fff;
+    border-radius: 20px;
+}
+
+
 
 
 

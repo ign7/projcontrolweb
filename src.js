@@ -1,15 +1,15 @@
 
-
 $(function(){
     $.ajax({
         url:'http://localhost/projeto/InserirTabela.php',
         method:'GET',
         dataType:'json'
        }).done(function(msg){  
-        console.log(msg);   
+        console.log(msg);  
       
         for(var i=0;i<msg.length;i++){
-      
+          
+         
           let name=msg[i].nome;
           let valor=msg[i].valor;
           let id=msg[i].id;
