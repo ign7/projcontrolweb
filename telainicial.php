@@ -17,7 +17,7 @@
         <nav class="menu">
             <ul>
                 <li>
-                    <a href="/projeto/telainicial.php">Inicio</a>
+                    <a href="./telainicial.php">Inicio</a>
                 </li>
                 <li>
                     <a href="contatos">Contatos</a>
@@ -29,7 +29,7 @@
         </nav>
     </div>
         <aside class="autentificacao">
-            <a href="/projeto/index.html">login</a>
+            <a href="./index.html">login</a>
             <a id="labeluser"></a>
         </aside>
     </header>
