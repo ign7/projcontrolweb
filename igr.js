@@ -48,8 +48,7 @@ $("#btnLogin").click(function(){
       console.log('Login realizado com sucesso...');
       if(data==1){
         alert('Login realizado com sucesso...');
-        $('#labeluser').html('@'+usuarioLogin);
-        //$(location).attr('href','./telainicial.php');
+        $(location).attr('href','./telainicial.php');
       }
      
       else{

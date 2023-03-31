@@ -18,7 +18,7 @@
    if(nomeCarga && valorCarga && dataCarga && obsCarga){
 
     $.ajax({
-      url:'./DadosTabela.php',
+      url:'http://localhost/projeto/DadosTabela.php',
       method:'POST',
       data:{carga:nomeCarga,valor:valorCarga,data:dataFormatada,obs:obsCarga},
       dataType:'json'

@@ -1,7 +1,13 @@
 
 $(function(){
+
+ 
+  let username=$('#userNameLogin').val();
+
+  console.log($('#labeluser').html('@'+username));
+
     $.ajax({
-        url:'./InserirTabela.php',
+        url:'http://localhost/projeto/InserirTabela.php',
         method:'GET',
         dataType:'json'
        }).done(function(msg){  
