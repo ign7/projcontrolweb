@@ -15,13 +15,14 @@ $(function(){
           let id=msg[i].id;
           let data=msg[i].dataCarga;
           let obs= msg[i].obs;
-      
+           
+          var dataFormatada = data.replace(/(\d*)-(\d*)-(\d*).*/, '$3/$2/$1');
           
           var str="<tr id='title'>"+
           "<td>" + id + "</td>" +
           "<td>" + name + "</td>" +
-          "<td>" + valor + "</td>" +
-          "<td>" + data + "</td>" +
+          "<td>"+'R$'+ + valor +',00'+ "</td>" +
+          "<td>" + dataFormatada + "</td>" +
           "<td>" + obs + "</td>" +
           "</tr>";
       

@@ -49,7 +49,7 @@ $("#btnLogin").click(function(){
       if(data==1){
         alert('Login realizado com sucesso...');
         $('#labeluser').html('@'+usuarioLogin);
-        $(location).attr('href','./telainicial.php');
+        //$(location).attr('href','./telainicial.php');
       }
      
       else{

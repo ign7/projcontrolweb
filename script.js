@@ -12,14 +12,15 @@
    let obsCarga=$('#obs').val();
 
    let usuario=$('#usario').val();
-   
+    
+   var dataFormatada = dataCarga.replace(/(\d*)-(\d*)-(\d*).*/, '$3/$2/$1');
    
    if(nomeCarga && valorCarga && dataCarga && obsCarga){
 
     $.ajax({
       url:'./DadosTabela.php',
       method:'POST',
-      data:{carga:nomeCarga,valor:valorCarga,data:dataCarga,obs:obsCarga},
+      data:{carga:nomeCarga,valor:valorCarga,data:dataFormatada,obs:obsCarga},
       dataType:'json'
     }).done(function(data){
         if(data==1){
