@@ -33,7 +33,7 @@
 });    
 
 function time(){
-  $(location).attr('href','./telainicial.php');
+  $(location).attr('href','http://localhost/projeto/telainicial.php');
 }
 
 $("#btnLogin").click(function(){
@@ -51,7 +51,7 @@ $("#btnLogin").click(function(){
       console.log('Login realizado com sucesso...');
       if(data==1){
         alert('Login realizado com sucesso...');
-        setTimeout(time,2000); 
+        setTimeout(time,1500); 
       }
      
       else{
