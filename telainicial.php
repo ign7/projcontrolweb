@@ -17,7 +17,7 @@
         <nav class="menu">
             <ul>
                 <li>
-                    <a href="./telainicial.php">Inicio</a>
+                    <a href="/projeto/telainicial.php">Inicio</a>
                 </li>
                 <li>
                     <a href="contatos">Contatos</a>
@@ -29,7 +29,7 @@
         </nav>
     </div>
         <aside class="autentificacao">
-            <a href="./index.html">login</a>
+            <a href="/projeto/index.html">login</a>
             <a id="labeluser"></a>
         </aside>
     </header>
@@ -58,9 +58,9 @@
             </table>
         </div>
     </main>
-    <script src="./jquery-3.6.4.min.js"></script>
-  <script src="./src.js"></script>
-  <script src="./igr.js"></script>
+    <script src="jquery-3.6.4.min.js"></script>
+  <script src="src.js"></script>
+  <script src="igr.js"></script>
   
 </body>
 </html>
