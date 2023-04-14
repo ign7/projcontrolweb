@@ -33,7 +33,7 @@
 });    
 
 function time(){
-  $(location).attr('href','http://localhost/projeto/telainicial.php');
+  $(location).attr('href','https://5cc0-2804-1b2-1000-82f-a3f4-4496-c9e8-244f.ngrok-free.app/projeto/telainicial.php');
 }
 
 $("#btnLogin").click(function(){
@@ -43,7 +43,7 @@ $("#btnLogin").click(function(){
 
  if(usuarioLogin!='' || senhaLogin!=null){
   $.ajax({
-    url:'http://localhost/projeto/inserirLogin.php',
+    url:'https://5cc0-2804-1b2-1000-82f-a3f4-4496-c9e8-244f.ngrok-free.app/projeto/inserirLogin.php',
     method:'POST',
     data:{user:usuarioLogin,senha:senhaLogin},
     dataType:'json'
