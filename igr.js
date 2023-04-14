@@ -33,7 +33,7 @@
 });    
 
 function time(){
-  $(location).attr('href','telainicial.php');
+  $(location).attr('href','https://ign7.github.io/projcontrolweb/telainicial.php');
 }
 
 $("#btnLogin").click(function(){
@@ -43,7 +43,7 @@ $("#btnLogin").click(function(){
 
  if(usuarioLogin!='' || senhaLogin!=null){
   $.ajax({
-    url:'inserirLogin.php',
+    url:'http://localhost/projeto/inserirLogin.php',
     method:'POST',
     data:{user:usuarioLogin,senha:senhaLogin},
     dataType:'json'
