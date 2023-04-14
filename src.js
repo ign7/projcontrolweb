@@ -1,13 +1,14 @@
 
 $(function(){
 
+  var link=' https://a9d9-2804-1b2-1000-82f-a3f4-4496-c9e8-244f.ngrok-free.app'
  
   let username=$('#userNameLogin').val();
 
   $('#labeluser').html('@'+username);
 
     $.ajax({
-        url:'https://b5d6-2804-1b2-1000-82f-a3f4-4496-c9e8-244f.ngrok-free.app/projeto/InserirTabela.php',
+        url:link+'/projeto/InserirTabela.php',
         method:'GET',
         dataType:'json'
        }).done(function(msg){  
@@ -40,13 +41,13 @@ $(function(){
           let idbotao=btndell.attr("id");
              console.log(idbotao);
              $.ajax({
-             url:'https://b5d6-2804-1b2-1000-82f-a3f4-4496-c9e8-244f.ngrok-free.app/projeto/deletecarga.php',
+             url:link+'/projeto/deletecarga.php',
              method:'POST',
              data:{idcarga:idbotao},
              dataType:'json'
            }).done(function(msg){
                alert('deletado com sucesso...');                                    
-                 window.location.href="https://b5d6-2804-1b2-1000-82f-a3f4-4496-c9e8-244f.ngrok-free.app/projeto/telainicial.php"
+                 window.location.href=link+"/projeto/telainicial.php"
            }); 
          });  
         }        

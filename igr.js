@@ -1,4 +1,6 @@
 
+var link=' https://a9d9-2804-1b2-1000-82f-a3f4-4496-c9e8-244f.ngrok-free.app'
+
  $('#btnCadastro').click(function(){
  
   let user=$('#usuario').val();
@@ -9,7 +11,7 @@
   if(user && name && pass && Email){  
 
     $.ajax({
-      url:'https://b5d6-2804-1b2-1000-82f-a3f4-4496-c9e8-244f.ngrok-free.app/projeto/inserirCadastro.php',
+      url:link+'/projeto/inserirCadastro.php',
       method:'POST',
       data:{usuario:user,
             nome:name,
@@ -33,7 +35,7 @@
 });    
 
 function time(){
-  $(location).attr('href','https://b5d6-2804-1b2-1000-82f-a3f4-4496-c9e8-244f.ngrok-free.app/projeto/telainicial.php');
+  $(location).attr('href',link+'/projeto/telainicial.php');
 }
 
 $("#btnLogin").click(function(){
@@ -43,7 +45,7 @@ $("#btnLogin").click(function(){
 
  if(usuarioLogin!='' || senhaLogin!=null){
   $.ajax({
-    url:'https://b5d6-2804-1b2-1000-82f-a3f4-4496-c9e8-244f.ngrok-free.app/projeto/inserirLogin.php',
+    url:link+'/projeto/inserirLogin.php',
     method:'POST',
     data:{user:usuarioLogin,senha:senhaLogin},
     dataType:'json'
