@@ -33,7 +33,7 @@
 });    
 
 function time(){
-  $(location).attr('href','http://localhost/projeto/telainicial.php');
+  $(location).attr('href','telainicial.php');
 }
 
 $("#btnLogin").click(function(){
@@ -43,7 +43,7 @@ $("#btnLogin").click(function(){
 
  if(usuarioLogin!='' || senhaLogin!=null){
   $.ajax({
-    url:'http://localhost/projeto/inserirLogin.php',
+    url:'inserirLogin.php',
     method:'POST',
     data:{user:usuarioLogin,senha:senhaLogin},
     dataType:'json'
@@ -51,7 +51,7 @@ $("#btnLogin").click(function(){
       console.log('Login realizado com sucesso...');
       if(data==1){
         alert('Login realizado com sucesso...');
-        setTimeout(time,1500); 
+        setTimeout(time,1000); 
       }
      
       else{

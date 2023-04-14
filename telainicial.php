@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link  href="styleIndex.css" rel="stylesheet">
     <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -42,9 +43,13 @@
             <button id="atualizar" onclick="atualizar()">Atualizar</button>
             <button id="novoCadastro" onclick="novoCadastro()">Cadastrar</button>
         </div>
+        
+        
+        
       <div class="containertb">         
             <table id="tabela">                
                 <thead id="title">
+                    <td id="action"><strong></strong></td>
                     <td id="nome"> <strong>id</strong> </td>
                     <td id="id"><strong>Nome da Carga</strong></td>
                     <td id="valor"><strong>Valor (R$)</strong></td>

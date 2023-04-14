@@ -1,9 +1,5 @@
 
 
-  
-
-
-
   $('#btnSalvar').click(function(e){
         
     let nomeCarga=$('#nome').val();
