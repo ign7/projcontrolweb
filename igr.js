@@ -33,7 +33,7 @@
 });    
 
 function time(){
-  $(location).attr('href','https://ign7.github.io/projcontrolweb/telainicial.php');
+  $(location).attr('href','http://localhost/projeto/telainicial.php');
 }
 
 $("#btnLogin").click(function(){
