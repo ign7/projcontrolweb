@@ -1,5 +1,5 @@
-var link=' https://a9d9-2804-1b2-1000-82f-a3f4-4496-c9e8-244f.ngrok-free.app'
-
+var link1='https://a9d9-2804-1b2-1000-82f-a3f4-4496-c9e8-244f.ngrok-free.app'
+var ponto=''
   $('#btnSalvar').click(function(e){
     
         
@@ -15,14 +15,14 @@ var link=' https://a9d9-2804-1b2-1000-82f-a3f4-4496-c9e8-244f.ngrok-free.app'
    if(nomeCarga && valorCarga && dataCarga && obsCarga){
 
     $.ajax({
-      url:link+'/projeto/DadosTabela.php',
+      url:'/projeto/DadosTabela.php',
       method:'POST',
       data:{carga:nomeCarga,valor:valorCarga,data:dataFormatada,obs:obsCarga},
       dataType:'json'
     }).done(function(data){
         if(data==1){
           alert('cadastro de cargas realizado com sucesso....');
-          $(location).attr('href',link+'/projeto/telainicial.php');
+          $(location).attr('href','/projeto/telainicial.php');
         }else{
           alert('error....');
         }

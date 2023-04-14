@@ -1,14 +1,15 @@
 
 $(function(){
 
-  var link=' https://a9d9-2804-1b2-1000-82f-a3f4-4496-c9e8-244f.ngrok-free.app'
+  var link1='https://a9d9-2804-1b2-1000-82f-a3f4-4496-c9e8-244f.ngrok-free.app'
+  var ponto=''
  
   let username=$('#userNameLogin').val();
 
   $('#labeluser').html('@'+username);
 
     $.ajax({
-        url:link+'/projeto/InserirTabela.php',
+        url:'/projeto/InserirTabela.php',
         method:'GET',
         dataType:'json'
        }).done(function(msg){  
@@ -41,13 +42,13 @@ $(function(){
           let idbotao=btndell.attr("id");
              console.log(idbotao);
              $.ajax({
-             url:link+'/projeto/deletecarga.php',
+             url:'/projeto/deletecarga.php',
              method:'POST',
              data:{idcarga:idbotao},
              dataType:'json'
            }).done(function(msg){
                alert('deletado com sucesso...');                                    
-                 window.location.href=link+"/projeto/telainicial.php"
+                 window.location.href="/projeto/telainicial.php"
            }); 
          });  
         }        

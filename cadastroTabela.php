@@ -45,16 +45,30 @@
     </div>
     <div id="valor-dia">     
         <div id="Valor">
-            <label id="labelvalor" class="geral" >valor: </label>
+            <label id="labelvalor" class="geral" >Valor: </label>
             <input type="number" id="valor" class="form-control" placeholder="valor" aria-label="Username"
             aria-describedby="basic-addon1">
         </div>
 
+        <!-- <div id="Valor">
+            <label id="labelvalor" class="geral" >Localização: </label>
+            <input type="text" id="valor" class="form-control" placeholder="local" aria-label="Username"
+            aria-describedby="basic-addon1">
+        </div> -->
+
     <div id="Dia">
-            <label id="labeldia"  class="geral">data de solicitaçao: </label>
+            <label id="labeldia"  class="geral">Data De Solicitaçao: </label>
             <input type="date" id="dia" class="form-control" placeholder="dia" aria-label="Username"
             aria-describedby="basic-addon1">
     </div>
+
+    <!-- <div id="Dia">
+            <label id="labeldia"  class="geral">Data De Previsão: </label>
+            <input type="date" id="dia" class="form-control" placeholder="dia" aria-label="Username"
+            aria-describedby="basic-addon1">
+    </div> -->
+
+
 
     </div>
     <div id="Obs">
