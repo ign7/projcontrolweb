@@ -9,7 +9,7 @@
   if(user && name && pass && Email){  
 
     $.ajax({
-      url:'http://localhost/projeto/inserirCadastro.php',
+      url:'https://5cc0-2804-1b2-1000-82f-a3f4-4496-c9e8-244f.ngrok-free.app/projeto/inserirCadastro.php',
       method:'POST',
       data:{usuario:user,
             nome:name,
