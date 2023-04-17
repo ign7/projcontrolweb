@@ -5,12 +5,12 @@ header('Content-Type: application/json');
 
 if(isset($_POST['idcarga'])){
    
-    $dados=$sqlquery=$con->query("SELECT valor FROM cadastrocarga WHERE  id='".$_POST['idcarga']."'");
+    $dados=$con->query("SELECT * FROM cadastrocarga WHERE  id='".$_POST['idcarga']."'");
                     
     if($dados->rowCount()>=1)
-    echo json_encode($sql->fetchAll(PDO::FETCH_ASSOC));
+    echo 1;
    else
-      echo 0;   
+   echo 0;
          
 } 
 
