@@ -1,5 +1,6 @@
 var link1='https://a9d9-2804-1b2-1000-82f-a3f4-4496-c9e8-244f.ngrok-free.app'
 var ponto=''
+
   $('#btnSalvar').click(function(e){
     
         
@@ -30,10 +31,12 @@ var ponto=''
         alert('erro no ajax ....');
     });
    }
-     
-  
-
    });
+
+
+
+
+  
 
    
    

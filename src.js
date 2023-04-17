@@ -60,24 +60,6 @@ $(function(){
 });
 
 
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -86,7 +68,8 @@ $(function(){
   }
    
 
-  function atualizar(){
+  function pageatualizar(){
+
   window.location.href="./atualizar.html"
   }
 

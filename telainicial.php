@@ -40,7 +40,7 @@
             <h1>Controle de Entregas e Cargas</h1>
         </div>
         <div class="botoes">
-            <button id="atualizar" onclick="atualizar()">Atualizar</button>
+            <button id="atualizar" onclick="pageatualizar()">Gastos</button>
             <button id="novoCadastro" onclick="novoCadastro()">Cadastrar</button>
         </div>
         
