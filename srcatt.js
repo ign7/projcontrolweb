@@ -28,16 +28,16 @@ $('#btnsalvaratt').click(function(){
     
 
     $.ajax({
-        url:'/projeto/gastos.php',
+        url:'/projeto/gastos.php?opcao=inserir',
         method:'POST',
-        data:{"status": "ajax" , "case":1,idcargagasto:id,preju:preju,lucro:lucro,ajudante:ajudante,manut:manut,litro:litro,gasolvalor:gasolvalor},
+        data:{idcargagasto:id,ajudante:ajudante,manut:manut,litro:litro,gasolvalor:gasolvalor},
         dataType:'json'
       }).done(function(msg){
             if(msg==1)            
-              console.log('Sucess...'); 
+              console.log('Sucesso no progresso...'); 
               
               $.ajax({
-                url:'/projeto/att.php',
+                url:'/projeto/gastos.php?opcao=pegavalor',
                 method:'POST',
                 data:{idcarga:id},
                 dataType:'json'
@@ -45,10 +45,17 @@ $('#btnsalvaratt').click(function(){
                   for(var i=0;i<result.length;i++){
                     var lucrex=result[i].valor;           
                    var resp=lucrex-ajudante-manut-gasolvalor;
-                    console.log(resp);
-                }  
-                console.log(result);  
-                alert('Sucess...');         
+                } 
+                console.log(resp); 
+                $.ajax({
+                   url:'/projeto/gastos.php?opcao=lucro',
+                   method:'POST',
+                   data:{id:id,resultlucro:resp},
+                   dataType:'json'
+                }).done(function(r){
+                  if(r==1)
+                      alert('Sucess...');                     
+                });        
               });    
                     
       }).fail(function(msg){

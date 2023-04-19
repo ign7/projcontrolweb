@@ -3,12 +3,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link  href="styleIndex.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link  rel="stylesheet"  href="styleIndex.css">
+   
     <link rel="icon" href="data:,">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+    
     <title>Document</title>
 </head>
 <body>
@@ -44,8 +49,7 @@
             <button id="novoCadastro" onclick="novoCadastro()">Cadastrar</button>
         </div>
         
-        
-        
+               
       <div class="containertb">         
             <table id="tabela">                
                 <thead id="title">
@@ -59,13 +63,17 @@
                 </thead>              
                 <tbody id="tb">
                 
-                </tbody>
-                           
+                </tbody>    
+                
+                
             </table>
         </div>
+        
     </main>
+    
     <script src="jquery-3.6.4.min.js"></script>
-  <script src="igr.js"></script>
-  <script src="src.js"></script>  
+    <script src="igr.js"></script>
+    <script src="src.js"></script>  
+ 
 </body>
 </html>

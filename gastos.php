@@ -10,15 +10,13 @@ header('Content-Type: application/json');
     include("conexao.php");
     if(isset($_POST['idcargagasto'])){
   
-        $query= $con->prepare("INSERT INTO cargagasto (idgasto,gasolinavalor,gasolinalitros,despesasajudante,despesamanutencao,lucro,prejuizo) 
-         VALUES (:idgasto,:gasolinavalor,:gasolinalitros,:despesasajudante,:despesamanutencao,:lucro,:prejuizo)");
+        $query= $con->prepare("INSERT INTO cargagasto (idgasto,gasolinavalor,gasolinalitros,despesasajudante,despesamanutencao) 
+         VALUES (:idgasto,:gasolinavalor,:gasolinalitros,:despesasajudante,:despesamanutencao)");
             $query->bindValue(':idgasto',$_POST['idcargagasto'],PDO::PARAM_STR);
             $query->bindValue(':gasolinavalor',$_POST['gasolvalor'],PDO::PARAM_STR);
             $query->bindValue(':gasolinalitros',$_POST['litro'],PDO::PARAM_STR);
             $query->bindValue(':despesasajudante',$_POST['ajudante'],PDO::PARAM_STR);
             $query->bindValue(':despesamanutencao',$_POST['manut'],PDO::PARAM_STR);
-            $query->bindValue(':lucro',$_POST['lucro'],PDO::PARAM_STR);
-            $query->bindValue(':prejuizo',$_POST['preju'],PDO::PARAM_STR);
             $query->execute();
     
         if($query->rowCount()>=1){
@@ -31,7 +29,7 @@ header('Content-Type: application/json');
 
 
  function pegarvalor(){
-    include("conexao.php"); 
+    include("conexao.php");
     if(isset($_POST['idcarga'])){
         
         $dados=$con->prepare("SELECT valor FROM cadastrocarga WHERE  id='".$_POST['idcarga']."'");
@@ -43,24 +41,43 @@ header('Content-Type: application/json');
              
     } 
 } 
+
+
+
+function slucro(){
+    include("conexao.php");
+    if(isset($_POST['id'])){
+        
+        $query= $con->prepare("UPDATE cargagasto SET lucro='".$_POST['resultlucro']."'  WHERE  idgasto='".$_POST['id']."'" );
+            $query->execute();
+    
+        if($query->rowCount()>=1){
+            echo 1;
+        }else
+           echo 0;  
+             
+    } 
+}
  
 
 
-
- $flag=isset($_POST['idcargagasto']);
+ $flag=($_GET['opcao']);
 
 switch($flag){
-    case "ajax":
-        switch($_POST["case"]){
-            case 1:
+   
+            case "inserir":
                 insertgasto();
                
                 break;
         
-                case 2:
+                case "pegavalor":
                     pegarvalor();
                 break;
-        }
+
+                case "lucro":
+                    slucro();
+                break;
+      
     
 }
 

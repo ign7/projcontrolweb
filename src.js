@@ -24,7 +24,7 @@ $(function(){
           let body=$('#tb');
           var dataFormatada = data.replace(/(\d*)-(\d*)-(\d*).*/, '$3/$2/$1');
 
-          var action='<button ><i class="fa fa-plus" style="font-size:18px;color:green"></i></button><button name="editDell" id='+idtb+' class="delete'+idtb+'"><i class="fa fa-trash" style="font-size:18px;color:red" aria-hidden="true"></i></button>';
+          var action='<button Name="editview" id='+idtb+' class="view'+idtb+'" ><i class="fa fa-plus"  style="font-size:18px;color:green"></i></button><button name="editDell" id='+idtb+' class="delete'+idtb+'"><i class="fa fa-trash" style="font-size:18px;color:red" aria-hidden="true"></i></button>';
           
           var str="<tr id='title'>"+
           '<td>'+action+'</td>'+
@@ -36,7 +36,9 @@ $(function(){
           "</tr>";                            
           body.prepend(str);   
                       
-          let btndell= $('.delete'+idtb+'');   
+          let btndell= $('.delete'+idtb+'');
+          
+          let btnview= $('.view'+idtb+'');
 
           btndell.click(function(){    
           let idbotao=btndell.attr("id");
@@ -51,13 +53,30 @@ $(function(){
                  window.location.href="/projeto/telainicial.php"
            }); 
          });  
+
+
+         btnview.click(function(){    
+           let idbotaoview=btnview.attr("id");
+             console.log(idbotaoview);
+             $.ajax({
+             url:'/projeto/viewcarga.php',
+             method:'POST',
+             data:{idcarga:idbotaoview},
+             dataType:'json'
+           }).done(function(result){
+              console.log(result);
+                                           
+            //window.location.href="/projeto/telaview.php"
+           });  
+         });  
         }        
        }).fail(function(){
             alert('error,');
-       });
-
-      
+       });     
 });
+
+
+ 
 
 
 
@@ -74,7 +93,4 @@ $(function(){
   }
 
 
-  let id=document.getElementById('id');
-
-
-  let ids=$('#id').val();
+ 
