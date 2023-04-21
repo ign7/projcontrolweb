@@ -64,9 +64,33 @@ $(function(){
              data:{idcarga:idbotaoview},
              dataType:'json'
            }).done(function(result){
-              console.log(result);
-                                           
-            //window.location.href="/projeto/telaview.php"
+            console.log(result);
+
+            for(let i= 0;i<result.length;i++){
+               let nomecarga=result[i].nome;
+               let idcarga=result[i].id;
+               let valorcarga=result[i].valor;
+               let lucro=result[i].lucro;
+               let obv=result[i].obs;
+               let date=result[i].dataCarga;
+               let valorg=result[i].gasolinavalor;
+               let litro=result[i].gasolinalitros;
+               let ajudante=result[i].despesasajudante
+               let manut=result[i].despesamanutencao
+               
+               $('#titlename').html(nomecarga+' / '+idcarga);
+               $('#datacarga').html('Data Entrega: '+date);
+               $('#valorcarga').html('Valor da Carga: R$: '+valorcarga);
+               $('#manut').html('Manutenção Veicular: R$'+manut);
+               $('#ajudante').html('Gasto Ajudante: R$'+ajudante);
+               $('#gasolvalor').html('Valor Combustivel: R$'+valorg);
+               $('#gasollitro').html('Litros: '+litro+'L');
+               $('#lucro').html('Lucro: R$'+lucro);
+               $('#obv').html('Observaçaõ: '+obv);
+            }
+
+            $('#myModal').modal('show');
+                                                                         
            });  
          });  
         }        

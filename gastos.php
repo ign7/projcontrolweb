@@ -44,6 +44,21 @@ header('Content-Type: application/json');
 
 
 
+function blurid(){
+    include("conexao.php");
+    if(isset($_POST['idcarga'])){  
+        $dados=$con->query("SELECT * FROM cadastrocarga WHERE  id='".$_POST['idcarga']."'");
+                        
+        if($dados->rowCount()>=1)
+        echo 1;
+       else
+       echo 0;
+             
+    } 
+}
+
+
+
 function slucro(){
     include("conexao.php");
     if(isset($_POST['id'])){
@@ -76,6 +91,10 @@ switch($flag){
 
                 case "lucro":
                     slucro();
+                break;
+
+                case "blur":
+                    blurid();
                 break;
       
     

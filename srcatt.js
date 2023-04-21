@@ -2,7 +2,7 @@
 $('#nomeatt').blur(function(){
    let nome=$('#nomeatt').val();
    $.ajax({
-     url:'/projeto/getcarga.php',
+     url:'/projeto/gastos.php?opcao=blur',
      method:'POST',
      data:{idcarga:nome},
      dataType:'json'
