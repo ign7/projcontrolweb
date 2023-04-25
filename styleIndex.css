@@ -1,54 +1,5 @@
 
-body{
-    margin: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
 
-
-.cabecalho{
-     width: 100%; 
-     justify-content: space-between;              
-    align-items: center; 
-    display: flex;
-    border-bottom: solid 4px rgb(92, 92, 233); 
-    height: 80px;
-    background-color: rgb(22, 20, 20);     
-}
-
-
-
-.menu ul li{
-   display: inline;     
-   list-style: none;       
-}
-.menu{
-    padding-top: 12px;  
-    flex-grow: 10;     
-}
-
-.menu ul li a{
-    padding:6px;
-    color: white;
-    font-size: 25px; 
-    text-decoration: none;
-}
-
-
-.menu a:hover,.menu a.selected{
-    background-color: #4faddb;
-}
-
-.autentificacao a { 
- font-size: 25px; 
- padding: 8px ; 
- color: white; 
- text-decoration: none;
-}
-
-.autentificacao{
-    padding-top: 12px;   
-    padding-right: 20px;   
-}
 .titulo  h1{
     display: flex;
     align-items: center;
@@ -110,11 +61,6 @@ td{
     border: 2px solid #fff;
     border-radius: 20px;
 }
-
-
-
-
-
 
 
 

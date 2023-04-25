@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="styleAtualizar.css">
     <title>Atualizar</title>
 </head>
@@ -38,53 +39,48 @@
         </div>
 
     <div id="Nome">
-            <label id="labelNome"  class="geral">Nome/ID Carga: </label>
-            <input type="text" id="nomeatt" class="form-control" placeholder="Nome" aria-label="Username"
-            aria-describedby="basic-addon1">
-            
+            <label id="labelNome"  class="geral">Carga: </label>
+            <!-- <input type="text" id="nomeatt" class="form-control" placeholder="Nome" aria-label="Username"
+            aria-describedby="basic-addon1">          -->
+             <select  id="selectatt">
+                
+             </select>                     
     </div>
 
-    <div class="prejulucro">
-
-        <div class="prejuizoclass">
-            <label id="labelprejuizo"  class="geral">prejuizo: </label>
-            <input type="text" id="prejuizoatt" class="form-control" placeholder="prejuizo" aria-label="Username"
-            aria-describedby="basic-addon1">
-        </div>
-
-        <div class="lucroclass">
-            <label id="labellucro"  class="geral">lucro: </label>
-            <input type="text" id="lucroatt" class="form-control" placeholder="lucro" aria-label="Username"
-            aria-describedby="basic-addon1">
-        </div>
+    <div id="titulogasolina">
+        <h2>Gasolina</h2>
     </div>
 
     <div class="gasol">
-
+         
         <div class="gasolina">
-            <label id="labelgasolina"  class="geral">gasolina Valor: </label>
-            <input type="text" id="gasolinaatt" class="form-control" placeholder="gasolina" aria-label="Username"
+            <label id="labelgasolina"  class="geral">Valor ($RS): </label>
+            <input type="number" id="gasolinaatt" class="form-control" placeholder="gasolina" aria-label="Username"
             aria-describedby="basic-addon1">
         </div>
 
         <div class="litro">
-            <label id="labelgasolinalitro"  class="geral">gasolina litros: </label>
-            <input type="text" id="gasolinalitroatt" class="form-control" placeholder="gasolina litro" aria-label="Username"
+            <label id="labelgasolinalitro"  class="geral">Litros: </label>
+            <input type="number" id="gasolinalitroatt" class="form-control" placeholder="gasolina litro" aria-label="Username"
             aria-describedby="basic-addon1">
         </div>
+    </div>
+
+    <div id="titulodespesa">
+        <h2>Despesas</h2>
     </div>
 
     <div class="despesa">
 
         <div class="despesaclass">
-            <label id="labeldespesa"  class="geral">despesa Ajudante: </label>
-            <input type="text" id="despesaajudanteatt" class="form-control" placeholder="despesa ajudante" aria-label="Username"
+            <label id="labeldespesa"  class="geral">Ajudante: </label>
+            <input type="number" id="despesaajudanteatt" class="form-control" placeholder="despesa ajudante" aria-label="Username"
             aria-describedby="basic-addon1">
         </div>
 
         <div class="despesamanut">
-            <label id="labeldespesalitro"  class="geral">despesa Manutenção: </label>
-            <input type="text" id="despesamanutatt" class="form-control" placeholder="despesa manutençao" aria-label="Username"
+            <label id="labeldespesalitro"  class="geral">Manutenção: </label>
+            <input type="number" id="despesamanutatt" class="form-control" placeholder="despesa manutençao" aria-label="Username"
             aria-describedby="basic-addon1">
         </div>
 
@@ -98,9 +94,7 @@
 
    <div id="botao">
     <button id="btnsalvaratt">Salvar</button>
-    <p>
-        FAZER AMANHA TABELA COM INFORMAÇOES SOBRE LUCRO PREJUIZO E GASTOS LOGO ABAIXO DO BOTAO SALVAR
-    </p>
+   
    </div>
   </div>
   <script src="jquery-3.6.4.min.js"></script>

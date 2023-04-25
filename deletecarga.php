@@ -4,7 +4,7 @@ include("conexao.php");
 header('Content-Type: application/json');
 
 if(isset($_POST['idcarga'])){
-   $sql=$con->prepare("DELETE FROM `cadastrocarga` WHERE `cadastrocarga`.`id` = '".$_POST['idcarga']."'");
+   $sql=$con->prepare("DELETE FROM `cadastrocarga`  WHERE `cadastrocarga`.`id` = '".$_POST['idcarga']."' ");
    $sql->execute();
    
    if($sql->rowCount()>=1){

@@ -1,113 +1,44 @@
-body{
-    margin: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
 
-
-.cabecalho{
-     width: 100%; 
-     justify-content: space-between;              
-    align-items: center; 
-    display: flex;
-    border-bottom: solid 4px rgb(92, 92, 233); 
-    height: 80px;
-    background-color: rgb(22, 20, 20);     
-}
-
-
-
-.menu ul li{
-   display: inline;     
-   list-style: none;       
-}
-.menu{
-    padding-top: 12px;  
-    flex-grow: 10;     
-}
-
-.menu ul li a{
-    padding:6px;
-    color: white;
-    font-size: 25px; 
-    text-decoration: none;
-}
-
-
-.menu a:hover,.menu a.selected{
-    background-color: #4faddb;
-}
-
-.autentificacao a { 
- font-size: 25px; 
- padding: 8px ; 
- color: white; 
- text-decoration: none;
-}
-
-.autentificacao{
-    padding-top: 12px;      
-}
-.titulo  h1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 50px; 
-    padding-bottom: 75px;
-}
-
-#containerDiv{  
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;  
-    padding-top: 15px; 
-    padding-left: 50px;   
+ #gasolinaatt{
+   max-width: 100%;
    
-}
+ }
 
-#Nome{
-   padding: 15px;      
-}
+ #gasolinalitroatt{
+    width: 100%;
+ }
 
-.prejuizoclass{
-    padding-right: 15px;
-    padding-bottom: 7px;
-    max-width: 70%;
-    border-radius: 5px;  
-    border-color: black;
-}
-
-.lucroclass{
-    padding-right: 15px;
-    padding-bottom: 7px;
-    max-width: 70%;
-    border-radius: 5px;  
-    border-color: black;
-}
-
-.prejulucro{
-    font-size: large;
-    color: black;
-    font-weight: 550;
-    display: flex;
-    flex-direction: row;   
-}
-
-
-#nomeatt{
+ label{
     padding-bottom: 7px;
     max-width: 70%;
     border-radius: 5px;     
     border-color: black;
  }
- 
 
-  .geral{
+ input{
+    max-width: 100%;  
+    padding: 8px;
+    border: 2px solid;
+    border-radius: 4px;
+    border-color: black;
+ }
+
+.geral{
     font-size: large;
     color: black;
     font-weight: 550;
     display: flex;
     flex-direction: column;
 }
+
+
+
+#containerDiv{
+    padding-left: 50px;
+}
+
+
+
 
 
 #btnsalvaratt{
@@ -121,6 +52,39 @@ body{
     float: left;
 }
 #botao{
-  padding: 18px;
+  padding-top: 18px;
 }
 
+.gasol{
+    display: flex;
+    flex-direction: row;   
+}
+
+.despesa{
+    display: flex;
+    flex-direction: row;   
+}
+
+
+.gasolina{
+    padding-bottom: 7px;
+    border-radius: 5px;  
+    border-color: black; 
+    padding-right: 30px;
+}
+
+.despesaclass{
+    padding-bottom: 7px;
+    border-radius: 5px;  
+    border-color: black; 
+    padding-right: 30px;
+}
+
+#selectatt{
+    width: 30%;
+    max-width: 100%;  
+    padding: 8px;
+    border: 2px solid;
+    border-radius: 4px;
+    border-color: black;
+}

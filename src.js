@@ -79,14 +79,22 @@ $(function(){
                let manut=result[i].despesamanutencao
                
                $('#titlename').html(nomecarga+' / '+idcarga);
-               $('#datacarga').html('Data Entrega: '+date);
-               $('#valorcarga').html('Valor da Carga: R$: '+valorcarga);
-               $('#manut').html('Manutenção Veicular: R$'+manut);
-               $('#ajudante').html('Gasto Ajudante: R$'+ajudante);
-               $('#gasolvalor').html('Valor Combustivel: R$'+valorg);
-               $('#gasollitro').html('Litros: '+litro+'L');
-               $('#lucro').html('Lucro: R$'+lucro);
-               $('#obv').html('Observaçaõ: '+obv);
+               $('#datacarga').html(date);
+               $('#valorcarga').html(valorcarga);
+               $('#manut').html(manut);
+               $('#ajudante').html(ajudante);
+               $('#gasolvalor').html(valorg);
+               $('#gasollitro').html(litro+'L');
+               if(lucro>0 && idcarga==idbotaoview){
+                $('#lucro').html('Lucro : R$'+lucro); 
+                $("#lucro").css("color", "green")
+               }
+                else{
+                  $("#lucro").css("color", "red")                 
+                  $('#lucro').html('Prejuizo : R$'+lucro);
+                }             
+               
+               $('#obv').html(obv);
             }
 
             $('#myModal').modal('show');

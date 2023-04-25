@@ -58,6 +58,20 @@ function blurid(){
 }
 
 
+function getbyname(){
+    include("conexao.php");
+    if(isset($_POST['namecarga'])){  
+        $dados=$con->query("SELECT id FROM cadastrocarga WHERE  nome='".$_POST['namecarga']."'");
+                        
+        if($dados->rowCount()>=1)
+        echo json_encode($dados->fetchAll(PDO::FETCH_ASSOC));
+       else
+       echo 0;
+             
+    } 
+}
+
+
 
 function slucro(){
     include("conexao.php");
@@ -72,6 +86,20 @@ function slucro(){
            echo 0;  
              
     } 
+}
+
+function selectname(){
+    include("conexao.php");
+      
+        $dados=$con->query("SELECT nome FROM cadastrocarga");
+         $dados->execute();
+
+        if($dados->rowCount()>=1)
+        echo json_encode($dados->fetchAll(PDO::FETCH_ASSOC));
+       else
+       echo 0;
+             
+     
 }
  
 
@@ -95,6 +123,13 @@ switch($flag){
 
                 case "blur":
                     blurid();
+                break;
+
+                case "getidbyname":
+                    getbyname();
+                break;
+                case "selectname":
+                    selectname();
                 break;
       
     
