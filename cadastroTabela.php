@@ -45,32 +45,33 @@
             aria-describedby="basic-addon1">
     </div>
     <div id="valor-dia">     
-        <div id="Valor">
-            <label id="labelvalor" class="geral" >Valor: </label>
-            <input type="number" id="valor" class="form-control" placeholder="valor" aria-label="Username"
-            aria-describedby="basic-addon1">
+            <div id="Valor">
+                <label id="labelvalor" class="geral" >Valor: </label>
+                <input type="number" id="valor" class="form-control" placeholder="valor" aria-label="Username"
+                aria-describedby="basic-addon1">
+            </div>
+
+          
+        <div id="Dia">
+                <label id="labeldia"  class="geral">Data De Solicitaçao: </label>
+                <input type="date" id="dia" class="form-control" placeholder="dia" aria-label="Username"
+                aria-describedby="basic-addon1">
         </div>
 
-        <!-- <div id="Valor">
-            <label id="labelvalor" class="geral" >Localização: </label>
-            <input type="text" id="valor" class="form-control" placeholder="local" aria-label="Username"
-            aria-describedby="basic-addon1">
-        </div> -->
 
-    <div id="Dia">
-            <label id="labeldia"  class="geral">Data De Solicitaçao: </label>
-            <input type="date" id="dia" class="form-control" placeholder="dia" aria-label="Username"
-            aria-describedby="basic-addon1">
+        <div id="Dia">
+                <label id="labeldia"  class="geral">Distancia (Km): </label>
+                <input type="number" id="distancia" class="form-control" placeholder="Distancia" aria-label="Username"
+                aria-describedby="basic-addon1">
+        </div>
+
+
     </div>
 
-    <!-- <div id="Dia">
-            <label id="labeldia"  class="geral">Data De Previsão: </label>
-            <input type="date" id="dia" class="form-control" placeholder="dia" aria-label="Username"
+    <div id="location">
+            <label id="labellocal"  class="geral">localização: </label>
+            <input type="text" id="local" class="form-control" placeholder="local" aria-label="Username"
             aria-describedby="basic-addon1">
-    </div> -->
-
-
-
     </div>
     <div id="Obs">
             <label id="labelobs" class="geral">Observação: </label>

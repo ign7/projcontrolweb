@@ -24,7 +24,7 @@ $(function(){
           let body=$('#tb');
           var dataFormatada = data.replace(/(\d*)-(\d*)-(\d*).*/, '$3/$2/$1');
 
-          var action='<button Name="editview" id='+idtb+' class="view'+idtb+'" ><i class="fa fa-plus"  style="font-size:18px;color:green"></i></button><button name="editDell" id='+idtb+' class="delete'+idtb+'"><i class="fa fa-trash" style="font-size:18px;color:red" aria-hidden="true"></i></button>';
+          var action='<button Name="editview" id='+idtb+' class="view'+idtb+'" ><i class="fa fa-plus"  style="font-size:18px;color:green; "></i></button><button name="editDell" id='+idtb+' class="delete'+idtb+'"><i class="fa fa-trash" style="font-size:18px;color:red" aria-hidden="true"></i></button>';
           
           var str="<tr id='title'>"+
           '<td>'+action+'</td>'+
@@ -77,7 +77,9 @@ $(function(){
                let litro=result[i].gasolinalitros;
                let ajudante=result[i].despesasajudante
                let manut=result[i].despesamanutencao
-               
+               let local=result[i].localizacao
+               let distancia=result[i].distancia
+
                $('#titlename').html(nomecarga+' / '+idcarga);
                $('#datacarga').html(date);
                $('#valorcarga').html(valorcarga);
@@ -85,6 +87,9 @@ $(function(){
                $('#ajudante').html(ajudante);
                $('#gasolvalor').html(valorg);
                $('#gasollitro').html(litro+'L');
+               $('#local').html(local);
+               $('#local').html(local);
+               $('#distancia').html(distancia+'Km');
                if(lucro>0 && idcarga==idbotaoview){
                 $('#lucro').html('Lucro : R$'+lucro); 
                 $("#lucro").css("color", "green")
@@ -96,7 +101,7 @@ $(function(){
                
                $('#obv').html(obv);
             }
-
+            
             $('#myModal').modal('show');
                                                                          
            });  

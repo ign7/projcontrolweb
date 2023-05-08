@@ -58,7 +58,7 @@
                     <td id="nome"> <strong>id</strong> </td>
                     <td id="id"><strong>Nome da Carga</strong></td>
                     <td id="valor"><strong>Valor (R$)</strong></td>
-                    <td id="dia"><strong>Dia da entrega</strong></td>
+                    <td id="dia"><strong>Data Solicitaçao</strong></td>
                     <td id="obs"><strong>Observação</strong></td>                   
                 </thead>              
                 <tbody id="tb">
@@ -76,7 +76,11 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <label for=""><strong> Entrega:</strong></label>
+                        <label for=""><strong>Localizacão:</strong></label>
+                        <span id='local'></span><br>
+                        <label for=""><strong>Distancia:</strong></label>
+                        <span id='distancia'></span>
+                        <label for=""><strong>Solicitação:</strong></label>
                         <span id='datacarga'></span><br>
                         <label for=""><strong>Valor da Carga: </strong>R$</label>
                         <span id='valorcarga'></span><br>
@@ -92,6 +96,7 @@
                         <span id='lucro'></span><br>
                         <label for=""><strong>Observaçaõ:</strong></label>
                         <span id='obv'></span>
+                        
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

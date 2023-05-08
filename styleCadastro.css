@@ -24,6 +24,11 @@
     padding: 15px;  
 }
 
+#location{
+  padding: 15px;  
+  max-width: 30%;
+}
+
 #nome{
     padding-bottom: 7px;
     max-width: 70%;
@@ -46,6 +51,18 @@
     border-radius: 5px;     
     border-color: black;
    
+  }
+
+  #local{
+    padding-bottom: 7px;   
+    border-radius: 5px;     
+    border-color: black;
+  }
+
+  #distancia{
+    padding-bottom: 7px;   
+    border-radius: 5px;     
+    border-color: black;
   }
 
   .geral{
@@ -74,4 +91,6 @@
 #botao{
   padding: 18px;
 }
+
+
 

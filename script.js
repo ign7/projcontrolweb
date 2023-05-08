@@ -8,7 +8,8 @@ var ponto=''
     let valorCarga=$('#valor').val();
     let dataCarga=$('#dia').val();
    let obsCarga=$('#obs').val();
-
+   let distancia=$("#distancia").val();
+  let local=$("#local").val();
    let usuario=$('#usario').val();
     
    var dataFormatada = dataCarga.replace(/(\d*)-(\d*)-(\d*).*/, '$3/$2/$1');
@@ -18,7 +19,7 @@ var ponto=''
     $.ajax({
       url:'/projeto/DadosTabela.php',
       method:'POST',
-      data:{carga:nomeCarga,valor:valorCarga,data:dataFormatada,obs:obsCarga},
+      data:{carga:nomeCarga,valor:valorCarga,data:dataFormatada,obs:obsCarga,distancia:distancia,local:local},
       dataType:'json'
     }).done(function(data){
         if(data==1){

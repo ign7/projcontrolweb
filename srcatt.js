@@ -107,9 +107,10 @@ alert('ID carga invalida ');
 });
 
 
- $("#selectatt").blur(function(){
-  $("#selectatt").text(" ");
-}); 
+
+  $("#selectatt").blur(function(){   
+    $("#selectatt").text(" ");      
+});  
      
 
 
